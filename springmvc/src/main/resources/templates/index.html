@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring MVC Sample</title>
+</head>
+<body>
+<p>Spring MVC Sample</p>
+<table>
+    <th>
+        <td>id</td>
+    <td>name</td>
+    </th>
+<tr th:each="c:${categoryList}">
+    <td th:text="${c.categoryId}"></td>
+    <td th:text="${c.categoryName}"></td>
+</td>
+</tr>
+</table>
+</body>
+</html>
